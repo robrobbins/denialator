@@ -44,3 +44,67 @@ then
 
     doge = 'Much wow, such fun...'
 
+## Functions
+
+This is some piece of a program that does something specific. They should have some notably action-y kinda names
+
+    sayStuff()
+
+or
+
+    useFlextape()
+
+Note how the words were smushed together with the next word beginning with a capital letter. This is called 'camel casing'. There's
+LOTS of variations of this in programming languages. Basically its because you can't use any white space and you want some way to
+show the different words (and you want to be _specific_ remember). Some languages may want you to start your function names with 
+an upper case
+
+    UseFlexTape()
+
+This is called many things: 'Pascal' casing (for us old school dudes), 'proper' casing, 'class' casing, etc... Doesn't really matter what
+you call it you just have to know which you are supposed to do. Again, this may be 'style' as the language may not care. 
+
+Python and Ruby languages will often use 'snake' casing - that is, use underscores to seperate words and don't use any caps
+
+    use_flex_tape()
+
+### About those parenthesis
+
+Since functions do something specific, sometimes you need to give them some piece of data. Inside the parens is where you give it to them. Think of 
+the space inside the parens like an envelope that you can mail shit to the function with. We call the stuff you put in there 'arguments'
+
+    sayStuff(sentence)
+
+You'll see more about how this works in the code examples
+
+## Methods
+
+Methods are just functions that belong to some object. We haven't really discussed objects yet but it's a pretty easy concept to grok 
+(grok is prog talk for understand).
+
+You know how functions are pieces of a program that do specific things? Well, you way want to group some functions together inside an 'object'
+(like a class - there are many kinds of 'objects') that does a few specific things. For example, the methods
+
+    meow() {
+      return 'RAWRRRRRRRR!!!!';
+    }
+
+and
+
+    tripMyMom() {...}
+
+could make more sense if they were contained within an object that they described, like:
+
+    class BlueTheCat {
+      meow() { ... }
+      tripMyMom() {...}
+    }
+
+It makes sense that those methods belong to BlueTheCat cuz _he does them_. This is called *Encapsulation*. Since that function now belongs to
+something it is called a *method* of that *object* and would be `called` by
+
+    BlueTheCat.meow()
+
+and of course,
+
+    BlueTheCat.tripMyMom()
